@@ -1,0 +1,58 @@
+
+.Navbar_div{
+
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    height: 10vh;
+    transition: all 0.7s ease-in-out  ;
+    overflow: hidden;
+
+}
+
+.Navbar_Navlinks_Div{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-weight: 500;
+    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+}
+.Navbar_Navlinks_Div:hover{
+    background-color: white;
+    color: black;
+}
+.AccountLinks{
+    text-decoration: none;
+    color: black;
+}
+.Navbar_logo{
+    height: 8vh;
+}
+@media only screen and (max-width: 900px) {
+    
+.Navbar_Navlinks_Div{
+    display: none;
+}
+.Navbar_Navlinks_Menu{
+    display: none;
+}
+.Navbar_div{
+    display: flex;
+    justify-content:center;
+    height: 8vh;
+    
+}
+.Navbar_logo{
+    height: 5vh;
+}
+
+}

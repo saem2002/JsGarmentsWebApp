@@ -1,0 +1,197 @@
+.Main_Div_Home{
+    min-height: 100vh;
+    background-color: #f2f2f0;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.heading_home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(1.5em + 5vw);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Items_Div_Home{
+  width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    
+}
+.carousel_heading_home{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: whitesmoke;
+  font-size: calc(1.5em + 1vw);
+  padding:0 2%;
+  font-family: 'Oswald', sans-serif;
+}
+.carousel_image{
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 1em;
+  border-color: gold;
+  min-height: 90vh;
+  width: 65%;
+  /* min-width: 60vw;
+  max-width: 60vw; */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:65vw;
+}
+.carousel_item_div{
+  
+  height: 70vh;
+  width: 100%;
+  display: flex;
+}
+
+
+.carousel{
+    background-color: black;
+    display: flex;
+}
+/* category_section */
+.category_section{
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40vh;
+  box-shadow: 5px 5px olive, -0em 0 .5em olive;
+}
+.circle_category{
+  font-size: calc(3vw + 3vh );
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30vh;
+  width: 14vw;
+  background-color: black;
+  color:white ;
+  border-radius: 50%;
+  transition: all 1s ease-in-out;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.circle_category:hover:nth-child(1){
+    color: transparent;
+    background:url('../../JSPICS/lower2.jpeg');
+    background-position: center;
+    background-size: contain;
+}
+.circle_category:hover:nth-child(2){
+    color: transparent;
+    background:url('../../JSPICS/shirt1.png');
+    background-position: center;
+    background-size: contain;
+
+}
+.circle_category:hover:nth-child(3){
+    color: transparent;
+    background:url('../../JSPICS/shirt1.jpg');
+    
+    background-position: center;
+    background-size: contain;
+
+}
+
+.ItemCard{
+     margin: 5vh 0vw; 
+     transition: all 2s ease-in-out;
+}
+.Itemcard_image{
+
+  width:18vw;
+  height:34vh
+}
+.flip-card {
+    background-color: transparent;
+    width: 18vw;
+    height: 50vh;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-transform: capitalize;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #f2f2f0;
+    color: black;
+  }
+  .flip-card-front div{
+    padding-left: 10px;
+  }
+  
+  .flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+@media only screen and (max-width: 900px) {
+
+    .carousel{
+        height: 40vh;
+        overflow: hidden;
+    }
+    .carousel_Home_image{
+        height: 40vh;
+        width: 100%;
+        margin: auto;
+        vertical-align: top;
+    }
+    .Main_Div_Home{
+
+        margin-top: 3vh;
+        
+    }
+      .ItemCard{
+        margin: 5 vh 1vw; 
+        transition: all 2s ease-in-out;
+      
+      }
+     .Itemcard_image{
+        width:45vw;
+        height:35vh
+      }
+      .flip-card {
+        background-color: transparent;
+        width: 45vw;
+        height: 35vh;
+        perspective: 1000px;
+      }
+      
+}
